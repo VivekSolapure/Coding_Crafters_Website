@@ -383,3 +383,15 @@
     line-height: 1.5rem;
   }
 }
+
+/*********************************RESPONSIVE***********************************/
+
+
+@media only screen and (max-width: 650px) {
+  .rectangle-group{
+    /* height: 0; */
+    width: 50rem;
+    display: flex;
+    gap: initial;
+  }
+}

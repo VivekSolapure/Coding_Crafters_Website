@@ -1,6 +1,10 @@
 .community {
   color: #78fff7;
 }
+
+.login_responsive{
+  /* display: none; */
+}
 .join-our-community-container {
   margin: 0;
   position: relative;
@@ -159,4 +163,22 @@
     padding-right: 1.25rem;
     box-sizing: border-box;
   }
+}
+
+/*********************************RESPONSIVE***********************************/
+@media only screen and (max-width: 650px) {
+  .signin-35,
+.signin-35-inner,
+.frame-parent,
+.unlock-your-coding-potentials-wrapper {
+  display: block;
+}
+
+.login_responsive{
+  display: none;
+}
+.frame-containe, .frame-group{
+  width: 70rem ;
+}
+
 }
