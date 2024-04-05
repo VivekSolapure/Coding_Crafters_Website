@@ -1,0 +1,27 @@
+.abt-title{
+    color: #ffb181a9;
+    font:  700 3.5rem "baloo bhai 2";
+    margin: 1rem 0;
+    text-align: center;
+}
+.abt-img{
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+    height: 28rem;
+}
+.img-1{
+    width: 60rem;
+    height: 28rem;
+    border-radius: 18px ;
+    object-fit: cover;
+}
+.content-abt{
+    font-family: "baloo bhai 2";
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem 2rem 7rem; 
+    color: #ffb181;
+    font-size: large;
+    font-weight: 400;
+}

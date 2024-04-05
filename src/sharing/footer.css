@@ -1,0 +1,143 @@
+.footer_page-footer {
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(63, 12, 93, 0.292),
+      rgba(35, 7, 53, 0.642) 90%
+    );
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 2rem;
+    width: 100%;
+  
+  }
+  .footer_main {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0 4em;
+  
+  }
+  .footer_top .footer_logo img {
+    height: 130px;
+    width: 110px;
+    margin: 0 auto;
+  }
+  section {
+    position: relative;
+    margin: 0 30px;
+  }
+  .footer_titles {
+    font-family: baloo bhai san sans-serif;
+    font-size: small;
+    color: #ea8e8e;
+  }
+  
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer_one {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    line-height: 40px;
+    color: rgb(100, 183, 183);
+    margin: 3.3em;
+   
+  }
+  .footer_one #first-abt,#second-gly,#third-et{
+    text-decoration: none;
+    color:#ea8e8e;
+  }
+  .footer_two {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(100, 183, 183);
+    line-height: 20px;
+    margin: 3.3em;
+  }
+
+  .footer_links_contact_us{
+    margin: 3.7rem 3.7rem 1.3rem 3.7rem;
+  }
+
+  .footer_three {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(100, 183, 183);
+    margin: 3.3em 3.3em 3.1em 3.3em;
+  }
+
+.footer_links_feedback_to_us{
+    margin: 3.3rem 3rem 0rem 3rem;
+}
+
+  .footer_icon {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1rem;
+    vertical-align: middle;
+  }
+  .footer_gmail {
+    height: 1.2rem;
+    width: 0 auto;
+  }
+  .footer_mail {
+    margin-top: 0.2em;
+    position: relative;
+  }
+  .footer_linkedin {
+    height: 1.6rem;
+    width: 0 auto;
+  }
+  .footer_lkn {
+    margin-top: 0.1em;
+    position: relative;
+  }
+  .footer_github{
+    position: relative;
+  }
+  .footer_git {
+    height: 1.9rem;
+  }
+  .footer_footer-bottom {
+    font-family: "baloo bhai 2" ;
+  }
+  .footer_bottom {
+    color: #f2e2e2;
+    text-align: center;
+  }
+  .footer_btn {
+    width: 11rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    margin: 1em;
+    background: linear-gradient(
+      90deg,
+      #e7561e 1.82%,
+      #de4c8e 39.12%,
+      #de4c8e 64.72%,
+      #5c46e4 93.86%
+    );
+    cursor: pointer;
+    color: #fffbfb;
+    text-align: center;
+    font-family: "baloo bhai 2";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    border: none;
+  }
+  

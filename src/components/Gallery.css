@@ -1,0 +1,46 @@
+.trending-photos{
+    color: #ffb181a9;
+    font:  700 3.5rem "baloo bhai 2";
+    margin: 1rem 0;
+    text-align: center;
+}
+.gallery_container{
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-custom_card{
+    background-color: initial;
+    border: none;
+    border-radius: 45px;
+    height: auto;
+    margin: 10px;
+    overflow: hidden;
+    width: 18rem;
+}
+
+.card-over-img{
+    border-radius: 45px;
+    height: 27rem;
+    object-fit: cover;
+    width: 100%;
+    transition: 0.3s;
+
+}
+.card-over-img:hover{
+    -webkit-transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+
+
+.links-g-photo{
+padding-left: 20%;
+color: #f0f8ff;
+text-decoration: none;
+
+
+}

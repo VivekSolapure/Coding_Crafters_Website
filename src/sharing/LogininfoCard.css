@@ -1,0 +1,143 @@
+.card-welcome {
+    line-height: 0.469rem;
+  }
+
+  .card_welcome-to-the-container {
+    margin: 0;
+    position: relative;
+    font-family: inherit;
+    padding-top: 0%;
+    font-size: 74%;
+    
+  }
+  .card-welcome-to-the-community-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 100%;
+  }
+  .card_sub-header-component {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 1.25rem 0 1.375rem;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .card_profile-message-area-child {
+    width: 40.438rem;
+    height: 29.75rem;
+    position: relative;
+    border-radius: 60px;
+    background-color: #141a23;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #78fff7;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .hey,
+  .now-can-access {
+    margin: 0;    
+  }
+  .hey-now-container1 {
+    width: 100%;
+    font-size: 1.5rem;
+    position: relative;
+    display: block;
+  }
+  .hey-now-container {
+    height: 7.25rem;
+    position: relative;
+    line-height: 2.575rem;
+    display: flex;
+  
+   
+  }
+ 
+  .frame-child {
+    height: 5.438rem;
+    width: 17.688rem;
+    position: relative;
+    border-radius: 18px;
+    background-color: #78fff7;
+    display: none;
+  }
+  .log-out {
+    width: 6.688rem;
+    position: relative;
+    font-size: 1.40rem;
+    line-height: 1.875rem;
+    font-family: "Baloo Bhai 2";
+    color: #000;
+  }
+  .log-out-button-inner,
+  .card_rectangle-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .card_rectangle-parent {
+    width: 7.105rem;
+    height: 2rem;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    display: inline-block;
+    font-family: "Baloo Bhai 2";
+    color: #0d1117;
+    text-align: center;
+    min-width: 3.375rem;
+    background-color: #0cc2b6;
+    border-radius: 10px;
+    border: none;
+  }
+  .card_rectangle-parent:hover {
+    background-color: #5ee6de;
+  }
+  .log-out-button-inner {
+    align-self: stretch;
+    justify-content: flex-end;
+  }
+  .log-out-button {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .log-out-button,
+  .card_profile-message-area,
+  .card_sub-header-component-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .card_profile-message-area {
+    border-radius: 24px;
+    width: 80%;
+    background-color: #141a23;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #78fff7;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 1.125rem 1.813rem 2.625rem 2.688rem;
+    font-size: 2.5rem;
+    font-family: "Baloo Bhai 2";
+  }
+  .card_sub-header-component-parent {
+    display: flex;
+    gap: 1.103rem;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    font-family: Roboto;
+  }
+  .hh{
+    display: flex;
+    justify-content: center;
+  }
+ 

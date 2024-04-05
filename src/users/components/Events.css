@@ -1,0 +1,136 @@
+.event_glow_up {
+  width: 55.4355rem;
+  height: 50.25rem;
+  flex-shrink: 0;
+  border-radius: 55.4355rem;
+  background: linear-gradient(
+    180deg,
+    rgb(156 121 176 / 60%) 0%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  filter: blur(98px);
+  width: 886.97px;
+  height: 804px;
+  top: -328px;
+  left: 277px;
+  position: absolute;
+  z-index: -1;
+}
+
+.event_pg_holder0 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.event_pg_holder {
+  display: flex;
+  width: 75.3125rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.875rem;
+}
+
+.event_heading {
+  height: 6rem;
+  align-self: stretch;
+  text-align: center;
+  font-family: "Tiro Devanagari Sanskrit";
+  font-size: 4.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5.625rem; /* 113.924% */
+  letter-spacing: 0.1875rem;
+  background: linear-gradient(
+    90deg,
+    #fff 17.76%,
+    rgba(255, 255, 255, 0.27) 113.45%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.event_container {
+  display: flex;
+  padding: 1.875rem 3.125rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0rem 4.5rem;
+  align-self: stretch;
+  border-radius: 2.5rem;
+  border: 3px solid #fff;
+}
+
+.event_image {
+  width: 22.1875rem;
+  height: 22.125rem;
+}
+
+.eventhd_dscrptn {
+  display: flex;
+  justify-content: center;
+}
+
+.event_container1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+  align-self: stretch;
+}
+.event_glow_in_EvnCard {
+  z-index: -1;
+  transform: rotate(-30.326deg);
+  position: absolute;
+  left: 12.38125rem;
+  bottom: -11.49981rem;
+}
+
+
+.event_dscrptn{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+height: 100%;
+flex: 1 0 0;
+}
+
+.event_dscrptn_heading {
+  display: flex;
+  height: 5.625rem;
+  min-width: 34.375rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: #fff;
+  font-family: Jost;
+  font-size: 2.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.7185rem; /* 145.113% */
+}
+
+.event_dscrptn_para {
+  display: flex;
+  min-width: 34.375rem;
+  justify-content: center;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: -200;
+  line-height: 2.5rem; /* 125% */
+}
+
+/*********************************RESPONSIVE***********************************/
+
+
+@media only screen and (max-width: 550px){
+
+  
+
+  
+}
