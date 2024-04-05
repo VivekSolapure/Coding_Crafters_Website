@@ -185,7 +185,9 @@
 
   }
 
-
+.event_image_container{
+  margin-left: 2.5rem;
+}
   .event_image {
     width: 22rem;
     margin-left: ;

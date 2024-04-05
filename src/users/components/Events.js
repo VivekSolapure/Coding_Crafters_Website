@@ -84,6 +84,7 @@ const Events = () => {
                                 <>
                                     <div className="event_container1">
                                         <div className="event_container">
+                                            <div className="event_image_container">
                                             <div className="event_image">
                                                 <Slider style={{ width: 310 }} {...settings}>
                                                     {
@@ -97,6 +98,7 @@ const Events = () => {
                                                                 </div>
                                                             ))}
                                                 </Slider>
+                                            </div>
                                             </div>
 
                                             <div className="event_dscrptn">
