@@ -9,8 +9,6 @@
     rgba(217, 217, 217, 0) 100%
   );
   filter: blur(98px);
-  width: 886.97px;
-  height: 804px;
   top: -328px;
   left: 277px;
   position: absolute;
@@ -40,7 +38,7 @@
   font-size: 4.9375rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 5.625rem; /* 113.924% */
+  line-height: 5.625rem;
   letter-spacing: 0.1875rem;
   background: linear-gradient(
     90deg,
@@ -89,13 +87,12 @@
   bottom: -11.49981rem;
 }
 
-
-.event_dscrptn{
+.event_dscrptn {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-height: 100%;
-flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  flex: 1 0 0;
 }
 
 .event_dscrptn_heading {
@@ -110,7 +107,7 @@ flex: 1 0 0;
   font-size: 2.5625rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.7185rem; /* 145.113% */
+  line-height: 3.7185rem;
 }
 
 .event_dscrptn_para {
@@ -122,15 +119,142 @@ flex: 1 0 0;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: -200;
-  line-height: 2.5rem; /* 125% */
+  line-height: 2.5rem; 
 }
 
 /*********************************RESPONSIVE***********************************/
 
+@media only screen and (max-width: 550px) {
+  .event_glow_up {
+    width: 20.4355rem;
+    height: 40.25rem;
+    flex-shrink: 0;
+    border-radius: 55.4355rem;
+    background: linear-gradient(
+      180deg,
+      rgb(156 121 176 / 60%) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    filter: blur(98px);
+    top: -328px;
+    left: 7px;
+    position: absolute;
+    z-index: -1;
+  }
 
-@media only screen and (max-width: 550px){
+  .event_pg_holder0 {
+    width: 105%;
+    height: 100%;
+    display: flex;
+  }
 
-  
+  .event_pg_holder {
+    display: flex;
+    width: -webkit-fill-available;
 
-  
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  .event_heading {
+    /* height: 3rem; */
+    align-self: stretch;
+    text-align: center;
+    font-family: "Tiro Devanagari Sanskrit";
+    font-size: 2.9375rem;
+    /* font-style: normal; */
+    font-weight: 400;
+    line-height: 5.625rem;
+    letter-spacing: 0.1875rem;
+    background: linear-gradient(
+      90deg,
+      #fff 17.76%,
+      rgba(255, 255, 255, 0.27) 113.45%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .eventhd_dscrptn {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+
+  }
+
+
+  .event_image {
+    width: 22rem;
+    margin-left: ;
+    /* aspect-ratio: 3/2.6; */
+    /* object-fit: contain; */
+  }
+  .event_container1 {
+    display: flex;
+    width: 380px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    align-self: stretch;
+  }
+
+    .event_container {
+    display: flex;
+    width: -webkit-fill-available;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875rem 1.125rem;
+    justify-content: center;
+    gap: 2rem;
+    align-self: stretch;
+    border-radius: 2.5rem;
+    border: 2px solid #fff;
+  }
+  .event_glow_in_EvnCard {
+    z-index: -1;
+    width: -webkit-fill-available;
+    transform: rotate(0.326deg);
+    position: absolute;
+    left: -5rem;
+    bottom: -11.49981rem;
+  }
+
+  .event_dscrptn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    flex: 1 0 0;
+  }
+  .event_dscrptn_heading {
+    display: flex;
+    height: auto; 
+    min-width: auto; 
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #fff;
+    font-family: Jost;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.7185rem;
+  }
+  .event_dscrptn_para {
+    display: flex;
+    min-width: auto;
+    justify-content: center;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: -200;
+    line-height: 1.2rem; 
+  }
 }

@@ -46,7 +46,7 @@ function App() {
             <Route path="/test2aa" element={<Events />}>Test2aa</Route>
             <Route path="/addMember" element={<AddMember />}>AddMember</Route>
             <Route path="/authen" element={<Authen />}>Signup</Route>
-            <Route path="/submit" element={<Submit />}>Submit</Route>
+            {/* <Route path="/submit" element={<Submit />}>Submit</Route> */}
             <Route path="/mainMember" element={< Mainboard />}>Submit</Route>
             <Route path="/gallery" element={< Gallery />}>Gallery</Route>
             <Route path="/feedback" element={< Fform />}>Feedback</Route>
@@ -63,7 +63,7 @@ function App() {
 
 
       </Router >
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
 
     </>
   );

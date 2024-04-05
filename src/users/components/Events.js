@@ -85,7 +85,7 @@ const Events = () => {
                                     <div className="event_container1">
                                         <div className="event_container">
                                             <div className="event_image">
-                                                <Slider style={{ width: 350 }} {...settings}>
+                                                <Slider style={{ width: 310 }} {...settings}>
                                                     {
                                                         Object.values(post.imglist).length === 0 ? (
                                                             <p>No images</p>
