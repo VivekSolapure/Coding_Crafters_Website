@@ -140,4 +140,10 @@
     display: flex;
     justify-content: center;
   }
- 
+
+
+/*********************************RESPONSIVE***********************************/
+@media only screen and (max-width: 650px) {
+  
+
+}

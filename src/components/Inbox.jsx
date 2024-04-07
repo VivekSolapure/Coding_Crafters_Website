@@ -27,18 +27,35 @@ export default function Dummyinbox() {
 
 
   const postDatas = async () => {
-    let currentDate = new Date();
+    let ccurrentDate = new Date();
     let monthNames = [
       "January", "February", "March", "April", "May", "June", "July",
       "August", "September", "October", "November", "December"
     ];
-    let monthIndex = currentDate.getMonth();
+    let monthIndex = ccurrentDate.getMonth();
     let monthName = monthNames[monthIndex];
-    let day = currentDate.getDate();
-    let year = currentDate.getFullYear();
-    day = day < 10 ? '0' + day : day;
-    let formattedDate = `${day} ${monthName} ${year.toString().slice(-2)}`;
+    let dday = ccurrentDate.getDate();
+    let dyear = ccurrentDate.getFullYear();
+    dday = dday < 10 ? '0' + dday : dday;
+    let formattedDate = `${dday} ${monthName} ${dyear.toString().slice(-2)}`;
     let time = Date.now();
+
+    // Get current date and time
+var currentDate = new Date();
+
+// Extract individual components
+var year = currentDate.getFullYear();
+var month = ('0' + (currentDate.getMonth() + 1)).slice(-2); // Adding 1 to month since it is zero-based
+var day = ('0' + currentDate.getDate()).slice(-2);
+var hour = ('0' + currentDate.getHours()).slice(-2);
+var minute = ('0' + currentDate.getMinutes()).slice(-2);
+var second = ('0' + currentDate.getSeconds()).slice(-2);
+
+// Concatenate components into desired format
+var currentTime = year + month + day + hour + minute + second;
+
+console.log(currentTime); // Output example: '20240408111630' (April 8, 2024, 11:16:30)
+
 
     if (((Post_txtTitle || Post_textarea) === '') || (ImgUpload.length === 0)) {
       alert("Please Fill all ");
@@ -50,7 +67,7 @@ export default function Dummyinbox() {
 
       for (let i = 0; i < ImgUpload.length; i++) {
         setuploadno(i + 1)
-        const imgref = ref(storage, `post/${time}/${ImgUpload[i].name}`)
+        const imgref = ref(storage, `post/${currentTime}/${ImgUpload[i].name}`)
         await uploadBytes(imgref, ImgUpload[i])//For uploading (kuta upload,kai upload)
           .then(async (snapshot) => {//  "snapshot" tyat sagala astay [items,prefixes,extra]
             await getDownloadURL(snapshot.ref)//url download karaylo ref cha, ref kai ahe tar "ImageUrls/"
@@ -59,7 +76,7 @@ export default function Dummyinbox() {
               })
           });
       }
-      firebase.putData(`post/${time}`, {
+      firebase.putData(`post/${currentTime}`, {
         description: Post_textarea,
         imglist: URLS,
         postuploadedon: formattedDate,

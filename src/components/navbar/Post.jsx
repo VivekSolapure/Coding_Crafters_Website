@@ -72,7 +72,7 @@ function Posts(props) {
           Object.values(postData).length === 0 ? (
             <h1>Loading...</h1>
           ) :
-            Object.values(postData).map((post, id) => (
+            Object.values(postData).reverse().map((post, id) => (
               <div key={id}>{
                 <>
                   <div className="Pline1">

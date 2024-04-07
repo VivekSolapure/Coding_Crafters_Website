@@ -36,7 +36,7 @@ const LoginComponent = () => {
   const siginErrorHandler=()=>{
     setShowError(true); // Show the error message
     Signup_firebase.signupUserWithEamilandPassword(Signup_email, Signup_password);
-    Signup_firebase.putData(`users/${Signup_time}`, { Signup_email, Signup_password });
+    if(!showError) Signup_firebase.putData(`users/${Signup_time}`, { Signup_email, Signup_password });
     // After a delay, hide the error message
 
   }
@@ -62,12 +62,17 @@ const LoginComponent = () => {
                   }} />
 
                 </div>
-                <div className="rectangle-group">
-                  <div className="frame-item" />
-                  <FaLock className="icon-mail-outline" />
-                  <input className="frame-inner" value={password} placeholder="Password" type="password" required
-                    onChange={(e) => { setpassword(e.target.value) }} />
+                <div className="rectangle-parent">
+                  <div className="frame-child" />
+                  <div className="icon-person-wrapper">
+                    <FaRegUser className="icon-person" />
+                  </div>
+                  <input className="username" value={password} placeholder="Password" type="password" required onChange={(e) => {
+                    setpassword(e.target.value)
+                  }} />
+
                 </div>
+        
               </div>
               <div className="login-btn">
                 <button className="btn" onClick={loginHandler}>Submit</button>
@@ -92,12 +97,17 @@ const LoginComponent = () => {
                   }} />
 
                 </div>
-                <div className="rectangle-group">
-                  <div className="frame-item" />
-                  <FaLock className="icon-mail-outline" />
-                  <input className="frame-inner" placeholder="Password" type="password" required
-                    onChange={(e) => { setSignup_password(e.target.value) }} />
+                <div className="rectangle-parent">
+                  <div className="frame-child" />
+                  <div className="icon-person-wrapper">
+                    <FaLock className="icon-person" />
+                  </div>
+                  <input className="username" placeholder="Password" type="password" required onChange={(e) => {
+                    setSignup_password(e.target.value)
+                  }} />
+
                 </div>
+                
               </div>
               <div className="frame-wrapper">
                 <div className="frame-parent1">

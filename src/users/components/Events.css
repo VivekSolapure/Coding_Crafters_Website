@@ -124,7 +124,7 @@
 
 /*********************************RESPONSIVE***********************************/
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1100px) {
   .event_glow_up {
     width: 20.4355rem;
     height: 40.25rem;
@@ -190,7 +190,7 @@
 }
   .event_image {
     width: 22rem;
-    margin-left: ;
+
     /* aspect-ratio: 3/2.6; */
     /* object-fit: contain; */
   }

@@ -48,7 +48,7 @@ export const FirebaseProvider = (props) => {
             })
 
         } catch (error) {
-            seterror(parseFirebaseErrorMessage(JSON.stringify(error)));
+            seterror(parseFirebaseErrorMessage(error.message));
         }
     }
     const parseFirebaseErrorMessage = (errorMessage) => {
@@ -69,7 +69,7 @@ export const FirebaseProvider = (props) => {
         try{
             await signInWithPopup(firebaseAuth, googleProvider)
         }catch(error){
-            seterror( parseFirebaseErrorMessage(JSON.stringify(error)));
+            seterror( parseFirebaseErrorMessage(error));
         }
     }
 
@@ -77,7 +77,7 @@ export const FirebaseProvider = (props) => {
         try {
             await signInWithEmailAndPassword(firebaseAuth, eemail, ppassword)
         } catch (eerror) {
-            seterror(parseFirebaseErrorMessage(JSON.stringify(error)));
+            seterror(parseFirebaseErrorMessage(error.message));
         }
     }
 

@@ -2,21 +2,42 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
-import { database } from "../../context/Firebase";
 import { useState, useEffect } from "react";
 import { child, get, ref } from "firebase/database";
+import { database } from "../../context/Firebase";
 
 const Navbar = (props) => {
   const auth= getAuth();
   const [user, setuser] = useState(null)
+  const [mainMemberData, setmainMemberData] = useState([]);
+const [email, setemail] = useState([])
+
   useEffect(()=>{
     onAuthStateChanged(auth,(user)=>{
       setuser(user)
     })
 },[]);
+let emailValues = [];
+const [emailProfilePhoto, setemailProfilePhoto] = useState(null)
 
-const [mainMemberData, setmainMemberData] = useState([]);
-const [email, setemail] = useState([])
+useEffect(() => {
+  if (user != null) {
+    Object.values(mainMemberData).forEach((a, id) => {
+      if (a.email === user.email) {
+        setemailProfilePhoto(a.profile);
+      } else {
+        Object.values(a).forEach(b => {
+          if (b && b.email === user.email) { // Check if b.email exists and is different from a.email
+            setemailProfilePhoto(b.profile);
+          }
+        });
+      }
+    });
+  }
+}, [user, mainMemberData]);
+
+
+
 
 
     useEffect(() => {
@@ -38,42 +59,7 @@ const [email, setemail] = useState([])
         fetchData();
 
     }, []);
-    // Object.values(mainMemberData).map(a=>{
-    //   console.log(a.email);
-    //   Object.values(a).map(b=>{
-    //     console.log(b.email);
-    //   })
-    // })
 
-    // Initialize an empty array to store the email values
-let emailValues = [];
-
-Object.values(mainMemberData).forEach(a => {
-  if (a.email) {
-    emailValues.push(a.email);
-  }
-  Object.values(a).forEach(b => {
-    if (b.email && b.email !== a.email) { // Check if b.email exists and is different from a.email
-      emailValues.push(b.email);
-    }
-  });
-});
-
-console.log(emailValues);
-
-const searchEmail = 'solapurevivek12@gmail.com';
-const emailExists = emailValues.includes(user);
-
-
-
-if (emailExists) {
-  console.log(`The email address ${searchEmail} exists.`);
-} else {
-  console.log(`The email address ${searchEmail} does not exist.`);
-}
-
-    
-    // console.log(mainMemberData);
 
   return (
     <>
@@ -105,7 +91,11 @@ if (emailExists) {
           
 
             <div className="items profile_item">
-            <Link to="/loginInfo">  <img className="profile-pic" src="./dummy_profile.png" alt="" /></Link>
+            {emailProfilePhoto === null ? (
+                  <Link to="/loginInfo"><img className="profile-pic" src="./dummy_profile.png" alt="Profile" /></Link>
+                ) : (
+                  <Link to="/loginInfo"><img className="profile-pic" src={emailProfilePhoto}  alt="Profile" /></Link>
+                )}
             </div>
           </div>
         </div>

@@ -40,8 +40,7 @@ const Logininfo = () => {
         </div>
         <div className="Logininfo_coding-crafters-content">
           <div className="Logininfo_coding-crafters-txt">
-            <b>Coding</b>
-            <span className="Logininfo_crafters-txt"> Crafter’s</span>
+            Coding<span className="Logininfo_crafters-txt"> Crafter’s</span>
           </div>
         </div>
         <div className="card_sub-header-component-parent">
@@ -71,7 +70,7 @@ const Logininfo = () => {
                 <div className="log-out-button-inner">
                   <button className="card_rectangle-parent">
                     <div className="frame-child" />
-                    <div className="log-out" onClick={() => { signOut(auth) }}>Log Out</div>
+                    <div className="log-out" onClick={() => { signOut(auth); window.location.reload();}}>Log Out</div>
                   </button>
                 </div>
               </div>
