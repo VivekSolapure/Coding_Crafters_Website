@@ -11,14 +11,18 @@ const Navbar = (props) => {
   const [user, setuser] = useState(null)
   const [mainMemberData, setmainMemberData] = useState([]);
 const [email, setemail] = useState([])
+const [emailProfilePhoto, setemailProfilePhoto] = useState(null)
 
   useEffect(()=>{
     onAuthStateChanged(auth,(user)=>{
       setuser(user)
+      if (user) {
+        setemailProfilePhoto(user.photoURL);
+      }
     })
 },[]);
+console.log(user);
 let emailValues = [];
-const [emailProfilePhoto, setemailProfilePhoto] = useState(null)
 
 useEffect(() => {
   if (user != null) {
